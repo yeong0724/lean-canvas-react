@@ -2,7 +2,7 @@ import { FaSearch } from 'react-icons/fa';
 
 function SearchBar({ searchText, setSearchText }) {
   return (
-    <div className="relative w-full mb-4">
+    <div className="relative w-full sm:w-64">
       <input
         type="text"
         placeholder="검색"

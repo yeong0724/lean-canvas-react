@@ -7,6 +7,7 @@ import {
   FaTimes,
 } from 'react-icons/fa';
 import { useState } from 'react';
+import Button from './Button';
 
 function Header() {
   /**
@@ -28,8 +29,8 @@ function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky top-0 bg-gray-800 text-white px-4 z-30">
-      <div className="container max-w-full flex justify-between items-center h-14">
+    <header className="sticky top-0 bg-gray-800 text-white px-16 z-30">
+      <div className="container mx-auto flex justify-between items-center h-14">
         <div>
           <Link to="/" className="text-xl font-bold">
             Lean Canvas
@@ -45,9 +46,7 @@ function Header() {
         <button className="min-[768px]:hidden" onClick={toggleMenu}>
           <FaBars />
         </button>
-        <button className="hidden min-[768px]:block bg-blue-500 hover:bg-blue-600 text-white font-bold py-1.5 px-4 rounded transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-          짐코딩 강의
-        </button>
+        <Button className="hidden md:block">짐코딩 강의</Button>
       </div>
 
       {/* Mobile Menu */}
