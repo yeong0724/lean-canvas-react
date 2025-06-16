@@ -20,5 +20,6 @@ module.exports = {
     ],
     'react/self-closing-comp': 'warn',
     'react/prop-types': 'off',
+    'react-hooks/exhaustive-deps': 'off',
   },
 };
