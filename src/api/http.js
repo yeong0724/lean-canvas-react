@@ -5,4 +5,9 @@ function create(baseURL, options) {
   return instance;
 }
 
-export const instance = create('http://192.168.45.48:8000');
+console.log(import.meta.env.MODE);
+
+export const instance = create(import.meta.env.VITE_API_BASE_URL);
+// export const instance = create(
+//   'https://json-server-vercel-nu-lyart.vercel.app',
+// );
